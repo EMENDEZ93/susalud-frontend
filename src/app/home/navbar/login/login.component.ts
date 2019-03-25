@@ -33,7 +33,7 @@ export class LoginComponent implements OnInit {
     );
 
     this.sesionService.autenticacion(this.loginInfo).subscribe(
-      data => {
+      (data) => {
         this.tokenStorageService.guardarToken(data.accessToken);
         this.tokenStorageService.guardarUsuario(data.username);
         this.tokenStorageService.saveAuthorities(data.authorities);
@@ -43,7 +43,7 @@ export class LoginComponent implements OnInit {
         this.roles = this.tokenStorageService.getAuthorities();
         this.cargarPagina();      
       },
-      error => {
+      (error) => {
         this.errorMessage = error.error.message;
         this.isLoginFailed = false;
       }
