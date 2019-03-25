@@ -38,7 +38,7 @@ export class RegistroComponent implements OnInit {
       this.form.email,
       this.form.password);
 
-    this.registroService.registrarUsuario(this.registroDto).subscribe(
+    this.registroService.registrarUsuario(this.registroDto, this.tokenStorageService.obtenerToken()).subscribe(
       data => {
         console.log(data);
         this.isSignedUp = true;
@@ -46,7 +46,7 @@ export class RegistroComponent implements OnInit {
       },
       error => {
         console.log(error);
-        this.errorMessage = error.error.message;
+        //this.errorMessage = error.error.message;
         this.isSignUpFailed = true;
       }
     );

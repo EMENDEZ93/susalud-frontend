@@ -10,6 +10,7 @@ import { TokenStorageService } from 'src/app/seguridad/token/token-storage.servi
 })
 export class LoginComponent implements OnInit {
 
+  info: any;
   form: any = {};
   isLoggedIn = false;
   isLoginFailed = false;
@@ -20,6 +21,13 @@ export class LoginComponent implements OnInit {
   constructor(private sesionService: SesionService, private tokenStorageService: TokenStorageService) { }
 
   ngOnInit() {
+
+    this.info = {
+      token: this.tokenStorageService.obtenerToken(),
+      username: this.tokenStorageService.obtenerUsuario(),
+      authorities: this.tokenStorageService.getAuthorities()
+    };
+
     if(this.tokenStorageService.obtenerToken()){
       this.isLoggedIn = true;
       this.roles = this.tokenStorageService.getAuthorities();
