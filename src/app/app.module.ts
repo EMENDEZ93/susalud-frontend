@@ -7,12 +7,14 @@ import { AppRoutingModule } from './app-routing/app-routing.module';
 import { LoginComponent } from './home/navbar/login/login.component';
 import { FormsModule }   from '@angular/forms';
 import { HttpClientModule } from '@angular/common/http';
+import { RegistroComponent } from './home/navbar/registro/registro.component';
 
 @NgModule({
   declarations: [
     AppComponent,
     HomeComponent,
     LoginComponent,
+    RegistroComponent,
   ],
   imports: [
     BrowserModule,
