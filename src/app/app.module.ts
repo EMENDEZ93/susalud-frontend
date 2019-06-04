@@ -8,6 +8,7 @@ import { LoginComponent } from './home/navbar/login/login.component';
 import { FormsModule }   from '@angular/forms';
 import { HttpClientModule } from '@angular/common/http';
 import { RegistroComponent } from './home/navbar/registro/registro.component';
+import { MedicamentoComponent } from './medicamento/medicamento.component';
 
 @NgModule({
   declarations: [
@@ -15,6 +16,7 @@ import { RegistroComponent } from './home/navbar/registro/registro.component';
     HomeComponent,
     LoginComponent,
     RegistroComponent,
+    MedicamentoComponent,
   ],
   imports: [
     BrowserModule,

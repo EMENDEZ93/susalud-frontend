@@ -1,0 +1,20 @@
+
+<h2 style="padding: 50px">Medicamentos disponibles</h2>
+<table class="table table-striped col-10 table-hover" style=" margin:auto">
+  <thead>
+    <tr>
+      <th>id</th>
+      <th>nombre</th>
+      <th>fecha Ingreso</th>
+      <th>Cantidad disponible</th>
+      <th>Codigo</th>
+    </tr>
+  </thead>
+  <tbody >
+    <tr *ngFor="let medicamento of medicamentos">
+      <td>{{medicamento.id}}</td>
+      <td>{{medicamento.nombre}}</td>
+      <td>{{medicamento.fechaIngreso}}</td>
+      <td>{{medicamento.cantidad}}</td>
+      <td>{{medicamento.codigo}}</td>
+    </tr>

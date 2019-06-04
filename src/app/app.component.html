@@ -1,10 +1,20 @@
 <!--The content below is only a placeholder and can be replaced.-->
-<h1>SuSalud</h1>
+<nav class="navbar navbar-expand-sm  navbar-dark" style="background-color: #0033a0">
+ 
+  <ul class="navbar-nav ">
+    <li class="nav-item active">
+      <a class="nav-link boton" routerLink="Menu"><h2>SuSalud</h2></a>
+    </li> 
+ </ul>
 
-<nav class="navbar navbar-inverse">
-  <button mat-button routerLink="">Menu</button>
-  <button mat-button routerLink="login">Login</button>
-  <button mat-button routerLink="registro">Register</button>
-</nav>
-
+  <ul class="navbar-nav ml-auto">
+    <li class="nav-item">
+      <a class="nav-link" style="color: white" routerLink="login">Iniciar Sesion</a>
+    </li>
+    <li class="nav-item">
+      <a class="nav-link"  style="color: white" routerLink="registro">Registro</a>
+    </li>
+  </ul>
+  </nav>
+  
 <router-outlet></router-outlet>
