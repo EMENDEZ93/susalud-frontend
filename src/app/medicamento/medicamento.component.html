@@ -1,5 +1,8 @@
 
-<h2 style="padding: 50px">Medicamentos disponibles</h2>
+<h2 style="padding: 50px 70px">Medicamentos disponibles</h2>
+<div class="container"> 
+  <button  type="button" class="btn btn-primary" role="button" style="margin: 10px 50px" [routerLink]="['/crear-medicamento']">Crear medicamento</button>
+</div>
 <table class="table table-striped col-10 table-hover" style=" margin:auto">
   <thead>
     <tr>
@@ -18,3 +21,4 @@
       <td>{{medicamento.cantidad}}</td>
       <td>{{medicamento.codigo}}</td>
     </tr>
+

@@ -9,6 +9,7 @@ import { FormsModule }   from '@angular/forms';
 import { HttpClientModule } from '@angular/common/http';
 import { RegistroComponent } from './home/navbar/registro/registro.component';
 import { MedicamentoComponent } from './medicamento/medicamento.component';
+import { CrearMedicamentosComponent } from './medicamento/crear-medicamentos/crear-medicamentos.component';
 
 @NgModule({
   declarations: [
@@ -17,6 +18,7 @@ import { MedicamentoComponent } from './medicamento/medicamento.component';
     LoginComponent,
     RegistroComponent,
     MedicamentoComponent,
+    CrearMedicamentosComponent,
   ],
   imports: [
     BrowserModule,

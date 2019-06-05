@@ -18,5 +18,10 @@ import {HttpClient, HttpHeaders} from '@angular/common/http'
         
         return this.http.get<Medicamento[]>(this.urlEndPoint);
       }
+      create(medicamento:Medicamento): Observable<Medicamento>{
+        return this.http.post<Medicamento>(this.urlEndPoint, medicamento,{headers: this.httHeaders})
+    
+      }
+
 
   }
